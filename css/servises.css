@@ -1,0 +1,127 @@
+  body {
+      background-color: rgb(77, 14, 14);
+      color: rgb(40, 206, 109);
+  }
+  
+  #animation {
+      animation-name: example;
+      background-repeat: infinite;
+      width: 50px;
+      height: 100px;
+  }
+  
+  h1 {
+      width: 400px;
+      height: 100px;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+      0% {
+          background-color: goldenrod;
+          left: 0%;
+      }
+      from {
+          background-color: deeppink;
+      }
+      20% {
+          background-color: rgb(0, 255, 34);
+      }
+      60% {
+          background-color: yellow;
+      }
+      100% {
+          background-color: darksalmon;
+      }
+  }
+  
+  #animation {
+      animation-name: example;
+      width: 200px;
+      height: 150px;
+      position: relative;
+      background-color: #62A80A;
+      line-height: 150px;
+      color: #000;
+      border: solid 1px #1A7404;
+      text-align: center;
+  }
+  
+  .animated {
+      -webkit-animation-duration: 1.6s;
+      animation-duration: 1.6s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes twisterInUp {
+      0% {
+          opacity: 0;
+          -webkit-transform-origin: 100% 0;
+          -webkit-transform: scale(0, 0) rotate(360deg) translateY(100%);
+      }
+      30% {
+          -webkit-transform-origin: 100% 0;
+          -webkit-transform: scale(0, 0) rotate(360deg) translateY(100%);
+      }
+      100% {
+          opacity: 1;
+          -webkit-transform-origin: 0 0;
+          -webkit-transform: scale(1, 1) rotate(0deg) translateY(0);
+      }
+  }
+  
+  @keyframes twisterInUp {
+      0% {
+          opacity: 0;
+          transform-origin: 100% 0;
+          transform: scale(0, 0) rotate(360deg) translateY(100%);
+      }
+      30% {
+          transform-origin: 100% 0;
+          transform: scale(0, 0) rotate(360deg) translateY(100%);
+      }
+      100% {
+          opacity: 1;
+          transform-origin: 0 0;
+          transform: scale(1, 1) rotate(0deg) translateY(0);
+      }
+  }
+  
+  .twisterInUp {
+      -webkit-animation-name: twisterInUp;
+      animation-name: twisterInUp;
+  }
+  
+  @media screen and(max-width: 400px) {}
+  
+  #footer {
+      background-color: #ff0000;
+      width: auto;
+      height: 80px;
+      margin: 200px 0px 0px 0px;
+  }
+  
+  #footer>p {
+      text-align: center;
+      margin-top: 20px;
+      color: rgb(71, 66, 66);
+  }
+  
+  #footer>p>a {
+      box-shadow: 5px 5px 5px 5px;
+      text-decoration: none;
+      color: white;
+      justify-content: space-evenly;
+  }
+  
+  i {
+      color: #c0be42;
+  }
